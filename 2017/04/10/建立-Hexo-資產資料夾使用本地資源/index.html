@@ -71,7 +71,7 @@
 <link href="/Blog/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Hexo," />
 
 
 
@@ -87,12 +87,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Eric-Blog">
-<meta property="og:url" content="http://qxesqxes.github.io/Blog/index.html">
+<meta name="description" content="當您在發布文章時，若想要使用本地資源資源，例如放置本地湍圖片，而不想要麻煩地上傳到雲端，如 Imgur ，就來看看如何建立 Hexo 資產資料夾並使用本地資源的介紹吧! 一樣分成三個步驟讓您快速上手:  設定配置文件來建立資產資料夾 利用標籤插件來使用本地資源 檢視與驗證">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="建立 Hexo 資產資料夾來使用本地資源">
+<meta property="og:url" content="http://qxesqxes.github.io/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/index.html">
 <meta property="og:site_name" content="Eric-Blog">
+<meta property="og:description" content="當您在發布文章時，若想要使用本地資源資源，例如放置本地湍圖片，而不想要麻煩地上傳到雲端，如 Imgur ，就來看看如何建立 Hexo 資產資料夾並使用本地資源的介紹吧! 一樣分成三個步驟讓您快速上手:  設定配置文件來建立資產資料夾 利用標籤插件來使用本地資源 檢視與驗證">
+<meta property="og:image" content="http://qxesqxes.github.io/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/Miku.jpg">
+<meta property="og:image" content="http://qxesqxes.github.io/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/Miku.jpg">
+<meta property="og:image" content="http://qxesqxes.github.io/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/markdown_failLoadImg.PNG">
+<meta property="og:updated_time" content="2017-04-10T13:21:06.800Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Eric-Blog">
+<meta name="twitter:title" content="建立 Hexo 資產資料夾來使用本地資源">
+<meta name="twitter:description" content="當您在發布文章時，若想要使用本地資源資源，例如放置本地湍圖片，而不想要麻煩地上傳到雲端，如 Imgur ，就來看看如何建立 Hexo 資產資料夾並使用本地資源的介紹吧! 一樣分成三個步驟讓您快速上手:  設定配置文件來建立資產資料夾 利用標籤插件來使用本地資源 檢視與驗證">
+<meta name="twitter:image" content="http://qxesqxes.github.io/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/Miku.jpg">
 
 
 
@@ -120,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://qxesqxes.github.io/Blog/"/>
+  <link rel="canonical" href="http://qxesqxes.github.io/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/"/>
 
 
 
 
 
-  <title> Eric-Blog </title>
+  <title> 建立 Hexo 資產資料夾來使用本地資源 | Eric-Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
@@ -151,9 +160,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -236,9 +243,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -268,10 +275,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/" itemprop="url">
-                  建立 Hexo 資產資料夾來使用本地資源
-                </a>
+                建立 Hexo 資產資料夾來使用本地資源
               
             
           </h1>
@@ -344,361 +348,108 @@
       
 
       
-        
-          <p>當您在發布文章時，若想要使用本地資源資源，例如放置本地湍圖片，而不想要麻煩地上傳到雲端，如 <a href="https://imgur.com/">Imgur</a> ，就來看看如何建立 Hexo 資產資料夾並使用本地資源的介紹吧!</p>
+        <p>當您在發布文章時，若想要使用本地資源資源，例如放置本地湍圖片，而不想要麻煩地上傳到雲端，如 <a href="https://imgur.com/" target="_blank" rel="external">Imgur</a> ，就來看看如何建立 Hexo 資產資料夾並使用本地資源的介紹吧!</p>
 <p>一樣分成三個步驟讓您快速上手:</p>
 <ol>
 <li><a href="#第一步：設定配置文件來建立資產資料夾">設定配置文件來建立資產資料夾</a></li>
 <li><a href="#第二步：利用標籤插件來使用本地資源">利用標籤插件來使用本地資源</a></li>
 <li><p><a href="#第三步：檢視與驗證">檢視與驗證</a></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/#more" rel="contents">
-              閱讀全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://qxesqxes.github.io/Blog/Blog/2017/04/09/更換Hexo主題/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="qxesqxes">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/Blog/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Eric-Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/Blog/2017/04/09/更換Hexo主題/" itemprop="url">
-                  更換 Hexo 主題
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2017-04-09T20:09:22+08:00">
-                2017-04-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Blog/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>在完成佈署 Hexo Blog 後，您可能會發現官方默認的主題太醜 XD 或是想要挑個符合您品味的主題，所以接下來就要介紹如何更換 Hexo Blog 主題。</p>
-<p>大致可以分成三個步驟:</p>
-<ol>
-<li><a href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E9%81%B8%E6%93%87%E4%B8%BB%E9%A1%8C">選擇主題</a></li>
-<li><a href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5:%20%E5%AE%89%E8%A3%9D%E4%B8%BB%E9%A1%8C">安裝主題</a></li>
-<li><a href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E5%95%9F%E7%94%A8%E8%88%87%E9%A9%97%E8%AD%89%E4%B8%BB%E9%A1%8C">啟用與驗證</a></li>
+<a id="more"></a>
+</li>
 </ol>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/Blog/2017/04/09/更換Hexo主題/#more" rel="contents">
-              閱讀全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://qxesqxes.github.io/Blog/Blog/2017/04/09/使用Hexo架部落格/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="qxesqxes">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/Blog/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Eric-Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/Blog/2017/04/09/使用Hexo架部落格/" itemprop="url">
-                  使用 Hexo 架部落格
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2017-04-09T17:44:46+08:00">
-                2017-04-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Blog/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><a href="https://hexo.io/">Hexo</a> 是一個快速、簡單且強大的網誌框架。Hexo 使用 Markdown（或其他渲染引擎）解析您的文章，並在幾秒鐘內，透過漂亮的主題產生靜態檔案。</p>
-<p>而底下就來介紹如何快速佈署 Hexo Blog，大致可以分成三個步驟：</p>
-<ol>
-<li><a href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E5%AE%89%E8%A3%9D-Hexo">安裝 Hexo</a></li>
-<li><a href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E5%BB%BA%E7%BD%AE-Hexo-Blog">建置 Hexo Blog</a></li>
-<li><a href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E4%BD%88%E7%BD%B2-Hexo-Blog-%E5%88%B0-Github-%E4%B8%8A">佈署 Hexo Blog 到 Github 上</a></li>
+<h2 id="第一步：設定配置文件來建立資產資料夾"><a href="#第一步：設定配置文件來建立資產資料夾" class="headerlink" title="第一步：設定配置文件來建立資產資料夾"></a>第一步：設定配置文件來建立資產資料夾</h2><p>資產 (Asset) 代表 <code>source</code> 資料夾中除了文章以外的所有檔案，例如圖片、CSS、JS檔案等。<br>Hexo 提供了一種方便管理 Asset 的設定： <code>post_asset_folder</code>，請打開 _config.yml 配置文件，並把 <code>post_asset_folder</code> 設定為 <code>true</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">post_asset_folder: true</div></pre></td></tr></table></figure>
+<p>當您開啟以上設定後，在建立新的 post 文章時 (<code>Hexo new [layout] &lt;title&gt;</code>)， Hexo 會自動建立一個與文章同名的資料夾，您可以把與該文章相關的所有資產都放到那個資料夾，如此一來，您便可以更方便的使用資產。</p>
+<h2 id="第二步：利用標籤插件來使用本地資源"><a href="#第二步：利用標籤插件來使用本地資源" class="headerlink" title="第二步：利用標籤插件來使用本地資源"></a>第二步：利用標籤插件來使用本地資源</h2><p>Hexo 3 後新增了幾個標籤插件，讓您更方便的在文章內引用本地資源。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% asset_path slug %&#125;</div><div class="line">&#123;% asset_img slug [title] %&#125;</div><div class="line">&#123;% asset_link slug [title] %&#125;</div></pre></td></tr></table></figure>
+<h2 id="第三步：檢視與驗證"><a href="#第三步：檢視與驗證" class="headerlink" title="第三步：檢視與驗證"></a>第三步：檢視與驗證</h2><p>使用 <code>asset_img</code> 來引用本地圖片當作範例，首先您的 <code>_post</code> 資料夾下可能長這樣子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">建立-Hexo-資產資料夾使用本地資源</div><div class="line">└── Miku.jpg</div><div class="line">建立-Hexo-資產資料夾使用本地資源.md</div></pre></td></tr></table></figure>
+<p>那當我們在文章中輸入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% asset_img  Miku.jpg [初音未來] %&#125;</div></pre></td></tr></table></figure>
+<p>就會顯示：</p>
+<img src="/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/Miku.jpg" alt="[初音未來]" title="[初音未來]">
+<h2 id="其他討論"><a href="#其他討論" class="headerlink" title="其他討論"></a>其他討論</h2><ol>
+<li><p>若您的 Hexo 項目中只有少量的圖片，其實最簡單的方式就是將它們放在 <code>source/images</code> 資料夾中，然後通過類似於 <code>![](/images/img.jpg)</code> 的方法來訪問它們。<br>但缺點就是沒有組織化與不好管理。</p>
+</li>
+<li><p>如果使用 Markdown 常規的語法 <code>![](img.jpg)</code>，雖然此圖會在文章中按你期待的方式工作，但他將 <strong>不會</strong> 出現在首頁上，而且可能會常有不能正確顯示的問題。 想要正確地引用圖片，是使用第二步中所介紹的標籤插件方式，圖片將會同時出現在文章、主頁和歸檔頁中。<br>這邊示範使用 Markdown 常規的語法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![初音未來](Miku.jpg) # 使用![初音未來](/Miku.jpg) 小編的網頁反而會抓不到圖片</div></pre></td></tr></table></figure>
+<p><img src="Miku.jpg" alt="初音未來"></p>
+<p>但首頁卻會顯示</p>
+<img src="/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/markdown_failLoadImg.PNG" alt="[首頁會抓不到初音未來的圖片]" title="[首頁會抓不到初音未來的圖片]">    
+</li>
+<li><p>有 <a href="https://github.com/CodeFalling/codefalling.com/blob/master/source/_posts/no-pains-with-hexo-local-image.org" target="_blank" rel="external">其他網頁</a> 介紹使用 <code>hexo-asset-image</code> 的方式，假設您有點強迫症不能接受標籤插件的方式，想要使用 Markdown 常規的引用圖片語法，才需一試，不然現在版本的標籤插件已會正確地生成 html (官方的API才能確保後續的維護)。</p>
+</li>
 </ol>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/Blog/2017/04/09/使用Hexo架部落格/#more" rel="contents">
-              閱讀全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
+<li><a href="https://hexo.io/zh-tw/docs/asset-folders.html" target="_blank" rel="external">官方資源文件介紹</a></li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/Blog/tags/Hexo/" rel="tag"># Hexo</a>
+          
+        </div>
       
 
       
+        
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Blog/2017/04/09/更換Hexo主題/" rel="prev" title="更換 Hexo 主題">
+                更換 Hexo 主題 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -706,6 +457,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -725,8 +480,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            本站概覽
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/Blog/images/avatar.gif"
@@ -788,6 +552,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一步：設定配置文件來建立資產資料夾"><span class="nav-number">1.</span> <span class="nav-text">第一步：設定配置文件來建立資產資料夾</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二步：利用標籤插件來使用本地資源"><span class="nav-number">2.</span> <span class="nav-text">第二步：利用標籤插件來使用本地資源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三步：檢視與驗證"><span class="nav-number">3.</span> <span class="nav-text">第三步：檢視與驗證</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他討論"><span class="nav-number">4.</span> <span class="nav-text">其他討論</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">5.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -902,6 +682,10 @@
 
 
   
+  <script type="text/javascript" src="/Blog/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/Blog/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
