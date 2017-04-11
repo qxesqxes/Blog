@@ -92,10 +92,10 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="更換 Hexo 主題">
 <meta property="og:url" content="http://qxesqxes.github.io/Blog/2017/04/09/更換Hexo主題/index.html">
-<meta property="og:site_name" content="Eric-Blog">
+<meta property="og:site_name" content="Eric-YM Liou Blog">
 <meta property="og:description" content="在完成佈署 Hexo Blog 後，您可能會發現官方默認的主題太醜 XD 或是想要挑個符合您品味的主題，所以接下來就要介紹如何更換 Hexo Blog 主題。 大致可以分成三個步驟:  選擇主題 安裝主題 啟用與驗證">
 <meta property="og:image" content="http://i.imgur.com/FTUYXy6.png">
-<meta property="og:updated_time" content="2017-04-10T13:31:06.809Z">
+<meta property="og:updated_time" content="2017-04-11T11:05:13.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="更換 Hexo 主題">
 <meta name="twitter:description" content="在完成佈署 Hexo Blog 後，您可能會發現官方默認的主題太醜 XD 或是想要挑個符合您品味的主題，所以接下來就要介紹如何更換 Hexo Blog 主題。 大致可以分成三個步驟:  選擇主題 安裝主題 啟用與驗證">
@@ -133,7 +133,7 @@
 
 
 
-  <title> 更換 Hexo 主題 | Eric-Blog </title>
+  <title> 更換 Hexo 主題 | Eric-YM Liou Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
@@ -169,7 +169,7 @@
     <div class="custom-logo-site-title">
       <a href="/Blog/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Eric-Blog</span>
+        <span class="site-title">Eric-YM Liou Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -255,13 +255,13 @@
     <link itemprop="mainEntityOfPage" href="http://qxesqxes.github.io/Blog/Blog/2017/04/09/更換Hexo主題/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="qxesqxes">
+      <meta itemprop="name" content="Eric-YM Liou">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/Blog/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Eric-Blog">
+      <meta itemprop="name" content="Eric-YM Liou Blog">
     </span>
 
     
@@ -379,23 +379,19 @@ $ git checkout v5.1.1
 </li>
 <li><p><strong>解壓縮後放到 themes 資料夾中</strong></p>
 <p>接著把解壓縮後的 <code>hexo-theme-next-5.1.1</code> 資料夾改名稱為 <code>next</code> ，並放到 Blog 專案中的 themes 資料夾中，即可完成安裝</p>
-<pre><code>.
-├── _config.yml # 配置文件
-├── package.json
-├── scaffolds
-├── scripts
-├── source
-|   ├── _drafts
-|   └── _posts
-└── themes # 存放主題的資料夾
-|   └── next # 剛剛解壓縮後的資料夾
-</code></pre></li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── _config.yml # 配置文件</div><div class="line">├── package.json</div><div class="line">├── scaffolds</div><div class="line">├── scripts</div><div class="line">├── source</div><div class="line">|   ├── _drafts</div><div class="line">|   └── _posts</div><div class="line">└── themes # 存放主題的資料夾</div><div class="line">|   └── next # 剛剛解壓縮後的資料夾</div></pre></td></tr></table></figure>
+</li>
 </ol>
 <h2 id="第三步：啟用與驗證主題"><a href="#第三步：啟用與驗證主題" class="headerlink" title="第三步：啟用與驗證主題"></a>第三步：啟用與驗證主題</h2><p>開啟 _config.yml 配置文件，在 <code>theme:</code> 字後輸入 <code>next</code>，如:</p>
 <pre><code>theme: next
 </code></pre><p>接著就可以在 terminal 回到 Blog 專案的根目錄，並輸入指令來驗證主題是否運作正常</p>
 <pre><code>$ hexo s --debug # 可以觀察是否有異常信息
 </code></pre><p>訪問 <a href="http://localhost:4000/Blog" target="_blank" rel="external">http://localhost:4000/Blog</a> 來檢視我們新安裝的主題囉!</p>
+<p>而您若要部屬 (deploy) 到網站的話，請先執行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div></pre></td></tr></table></figure>
+<p>這個指令會清除緩存文件 <code>db.json</code> 和已生成的靜態文件 <code>public</code>。<br>因為在某些情況（尤其是更換主題後），如果發現您對網站的更改無論如何都不生效時，您可能就需要執行上述指令。</p>
+<p>然後再進行正常的佈署指令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -p</div></pre></td></tr></table></figure></p>
+<p>然後等一下就可以去檢視更改主題後的網站囉。</p>
 <p>更多使用 NexT 主題方式請見 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT 官方網站</a></p>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
 <li><a href="http://oyjt.github.io/2016/01/16/hexo%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/" target="_blank" rel="external">hexo博客更换主题</a></li>
@@ -516,8 +512,8 @@ $ git checkout v5.1.1
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/Blog/images/avatar.gif"
-               alt="qxesqxes" />
-          <p class="site-author-name" itemprop="name">qxesqxes</p>
+               alt="Eric-YM Liou" />
+          <p class="site-author-name" itemprop="name">Eric-YM Liou</p>
            
               <p class="site-description motion-element" itemprop="description"></p>
           
@@ -527,7 +523,7 @@ $ git checkout v5.1.1
           
             <div class="site-state-item site-state-posts">
               <a href="/Blog/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">文章</span>
               </a>
             </div>
@@ -611,7 +607,7 @@ $ git checkout v5.1.1
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">qxesqxes</span>
+  <span class="author" itemprop="copyrightHolder">Eric-YM Liou</span>
 </div>
 
 
