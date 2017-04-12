@@ -87,21 +87,19 @@
 
 
 
-<meta name="description" content="Hexo 是一個快速、簡單且強大的網誌框架。Hexo 使用 Markdown（或其他渲染引擎）解析您的文章，並在幾秒鐘內，透過漂亮的主題產生靜態檔案。 而底下就來介紹如何快速佈署 Hexo Blog，大致可以分成三個步驟：  安裝 Hexo 建置 Hexo Blog 佈署 Hexo Blog 到 Github 上">
+<meta name="description" content="Hexo 是一個快速、簡單且強大的網誌框架。Hexo 使用 Markdown（或其他渲染引擎）解析您的文章，並在幾秒鐘內，透過漂亮的主題產生靜態檔案。 而底下就來介紹如何快速佈署 Hexo Blog，大致可以分成三個步驟：  安裝 Hexo 建置 Hexo Blog Hexo Blog 本地端測試">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用 Hexo 架部落格">
 <meta property="og:url" content="http://qxesqxes.github.io/Blog/2017/04/09/使用Hexo架部落格/index.html">
 <meta property="og:site_name" content="Eric-YM Liou Blog">
-<meta property="og:description" content="Hexo 是一個快速、簡單且強大的網誌框架。Hexo 使用 Markdown（或其他渲染引擎）解析您的文章，並在幾秒鐘內，透過漂亮的主題產生靜態檔案。 而底下就來介紹如何快速佈署 Hexo Blog，大致可以分成三個步驟：  安裝 Hexo 建置 Hexo Blog 佈署 Hexo Blog 到 Github 上">
-<meta property="og:image" content="http://i.imgur.com/u17Ruxp.png">
-<meta property="og:image" content="http://i.imgur.com/Ub7fsoD.png">
+<meta property="og:description" content="Hexo 是一個快速、簡單且強大的網誌框架。Hexo 使用 Markdown（或其他渲染引擎）解析您的文章，並在幾秒鐘內，透過漂亮的主題產生靜態檔案。 而底下就來介紹如何快速佈署 Hexo Blog，大致可以分成三個步驟：  安裝 Hexo 建置 Hexo Blog Hexo Blog 本地端測試">
 <meta property="og:image" content="http://i.imgur.com/TCipvhc.png">
-<meta property="og:updated_time" content="2017-04-11T14:18:33.541Z">
+<meta property="og:updated_time" content="2017-04-12T11:16:07.832Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用 Hexo 架部落格">
-<meta name="twitter:description" content="Hexo 是一個快速、簡單且強大的網誌框架。Hexo 使用 Markdown（或其他渲染引擎）解析您的文章，並在幾秒鐘內，透過漂亮的主題產生靜態檔案。 而底下就來介紹如何快速佈署 Hexo Blog，大致可以分成三個步驟：  安裝 Hexo 建置 Hexo Blog 佈署 Hexo Blog 到 Github 上">
-<meta name="twitter:image" content="http://i.imgur.com/u17Ruxp.png">
+<meta name="twitter:description" content="Hexo 是一個快速、簡單且強大的網誌框架。Hexo 使用 Markdown（或其他渲染引擎）解析您的文章，並在幾秒鐘內，透過漂亮的主題產生靜態檔案。 而底下就來介紹如何快速佈署 Hexo Blog，大致可以分成三個步驟：  安裝 Hexo 建置 Hexo Blog Hexo Blog 本地端測試">
+<meta name="twitter:image" content="http://i.imgur.com/TCipvhc.png">
 
 
 
@@ -202,6 +200,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首頁
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/Blog/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分類
           </a>
         </li>
       
@@ -353,7 +361,7 @@
 <ol>
 <li><a href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E5%AE%89%E8%A3%9D-Hexo">安裝 Hexo</a></li>
 <li><a href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E5%BB%BA%E7%BD%AE-Hexo-Blog">建置 Hexo Blog</a></li>
-<li><a href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E4%BD%88%E7%BD%B2-Hexo-Blog-%E5%88%B0-Github-%E4%B8%8A">佈署 Hexo Blog 到 Github 上</a></li>
+<li><a href="#第三步：Hexo-Blog-本地端測試">Hexo Blog 本地端測試</a></li>
 </ol>
 <a id="more"></a>
 <h2 id="第一步：安裝-Hexo"><a href="#第一步：安裝-Hexo" class="headerlink" title="第一步：安裝 Hexo"></a>第一步：安裝 Hexo</h2><h3 id="安裝需求"><a href="#安裝需求" class="headerlink" title="安裝需求"></a>安裝需求</h3><p>安裝 Hexo 相當簡單；然而，在安裝前您必須先檢查下列您的電腦是否已經安裝下列軟體：</p>
@@ -376,45 +384,21 @@
 </li>
 </ol>
 <p>More info: <a href="https://hexo.io/docs/setup.html" target="_blank" rel="external">官網更多建置相關的介紹</a></p>
-<h3 id="Hexo-Blog-本地端測試"><a href="#Hexo-Blog-本地端測試" class="headerlink" title="Hexo Blog 本地端測試"></a>Hexo Blog 本地端測試</h3><p>以上步驟就已完成建置了，接下來只要輸入以下指令，就可以在本地電腦端看到Blog</p>
+<h2 id="第三步：Hexo-Blog-本地端測試"><a href="#第三步：Hexo-Blog-本地端測試" class="headerlink" title="第三步：Hexo Blog 本地端測試"></a>第三步：Hexo Blog 本地端測試</h2><p>以上步驟就已完成建置了，接下來只要輸入以下指令，就可以在本地電腦端看到Blog</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ Hexo g <span class="comment"># generate 產生靜態檔案</span></div><div class="line">$ Hexo s <span class="comment"># server 啟動伺服器</span></div></pre></td></tr></table></figure>
 <p>然後打開瀏覽器，輸入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 就可以看到你的Blog囉!</p>
-<h2 id="第三步：佈署-Hexo-Blog-到-Github-上"><a href="#第三步：佈署-Hexo-Blog-到-Github-上" class="headerlink" title="第三步：佈署 Hexo Blog 到 Github 上"></a>第三步：佈署 Hexo Blog 到 Github 上</h2><h3 id="首先登入您的github頁面"><a href="#首先登入您的github頁面" class="headerlink" title="首先登入您的github頁面"></a>首先登入您的<a href="https://github.com/login" target="_blank" rel="external">github</a>頁面</h3><ul>
-<li><p>在github上面新增一個repository，取名叫Blog。如:<br><img src="http://i.imgur.com/u17Ruxp.png" width="500" alt="Create Blog repository on github" align="center"></p>
-</li>
-<li><p>請記住此repository的clone路徑。如:<br> <img src="http://i.imgur.com/Ub7fsoD.png" alt="repository path"></p>
-</li>
-</ul>
-<h3 id="安裝hexo-deployer-git"><a href="#安裝hexo-deployer-git" class="headerlink" title="安裝hexo-deployer-git"></a>安裝hexo-deployer-git</h3><p>到 terminal 輸入:</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<h3 id="修改-config-yml-設定"><a href="#修改-config-yml-設定" class="headerlink" title="修改 _config.yml 設定"></a>修改 _config.yml 設定</h3><ul>
-<li><p>設定URL的部分</p>
-<pre><code>url: http://qxesqxes.github.io/Blog
-root: /Blog/
-</code></pre></li>
-<li><p>設定deploy的部分</p>
-<pre><code>deploy:
-      type: git
-      repository: https://github.com/qxesqxes/Blog.git
-      branch: gh-pages
-</code></pre></li>
-</ul>
-<h3 id="佈署-Hexo-Blog"><a href="#佈署-Hexo-Blog" class="headerlink" title="佈署 Hexo Blog:"></a>佈署 Hexo Blog:</h3><p>輸入以下指令就完成佈署啦</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d -g <span class="comment"># deploy並generate，佈署Blog到github上</span></div></pre></td></tr></table></figure>
-<p>  就可以在剛剛設定的url上看到您的Blog啦</p>
-<p>  <img src="http://i.imgur.com/TCipvhc.png" alt="Hexo Blog"></p>
+<p><img src="http://i.imgur.com/TCipvhc.png" alt="Hexo Blog"></p>
 <h2 id="參考資料-Reference"><a href="#參考資料-Reference" class="headerlink" title="參考資料 Reference"></a>參考資料 Reference</h2><ol>
 <li><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a></li>
 <li><a href="https://wwssllabcd.github.io/blog/2014/12/22/how-to-install-hexo/#%E6%8A%8A-Blog-%E6%94%BE%E5%9C%A8-Github-%E4%B8%8A" target="_blank" rel="external">Hexo 安裝教學、心得筆記</a></li>
 <li><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></li>
 </ol>
 <h2 id="查看更多有關-Hexo-文章"><a href="#查看更多有關-Hexo-文章" class="headerlink" title="查看更多有關 Hexo 文章"></a>查看更多有關 Hexo 文章</h2><ol>
-<li>佈署 Hexo Blog 到 Github 上</li>
+<li><a href="/Blog/2017/04/09/佈署-Hexo-Blog-到-Github-上/">佈署 Hexo Blog 到 Github 上</a></li>
 <li><a href="/Blog/2017/04/09/%E6%9B%B4%E6%8F%9BHexo%E4%B8%BB%E9%A1%8C/">更換 Hexo 主題</a></li>
 <li><a href="/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/">建立-Hexo-資產資料夾使用本地資源</a></li>
-<li>發布 Hexo 文章 [TODO]</li>
+<li><a href="/Blog/2017/04/11/發佈-Hexo-文章的二三事/">發布 Hexo 文章</a></li>
 <li>發佈 Hexo 頁面和草稿 [TODO]</li>
-<li>閱讀更多 [TODO]  </li>
 <li>網站分類與標籤 [TODO]</li>
 <li>google analysis [TODO]</li>
 <li>申請網域reference [TODO]</li>
@@ -463,8 +447,8 @@ root: /Blog/
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Blog/2017/04/09/更換Hexo主題/" rel="next" title="更換 Hexo 主題">
-                <i class="fa fa-chevron-left"></i> 更換 Hexo 主題
+              <a href="/Blog/2017/04/09/佈署-Hexo-Blog-到-Github-上/" rel="next" title="佈署 Hexo Blog 到 Github 上">
+                <i class="fa fa-chevron-left"></i> 佈署 Hexo Blog 到 Github 上
               </a>
             
           </div>
@@ -543,7 +527,7 @@ root: /Blog/
           
             <div class="site-state-item site-state-posts">
               <a href="/Blog/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">文章</span>
               </a>
             </div>
@@ -564,10 +548,10 @@ root: /Blog/
             
             
             <div class="site-state-item site-state-tags">
-              
+              <a href="/Blog/tags/index.html">
                 <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">標籤</span>
-              
+              </a>
             </div>
           
 
@@ -600,7 +584,7 @@ root: /Blog/
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一步：安裝-Hexo"><span class="nav-number">1.</span> <span class="nav-text">第一步：安裝 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝需求"><span class="nav-number">1.1.</span> <span class="nav-text">安裝需求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-NPM-安裝-Hexo"><span class="nav-number">1.2.</span> <span class="nav-text">使用 NPM 安裝 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二步：建置-Hexo-Blog"><span class="nav-number">2.</span> <span class="nav-text">第二步：建置 Hexo Blog</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-Blog-本地端測試"><span class="nav-number">2.1.</span> <span class="nav-text">Hexo Blog 本地端測試</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三步：佈署-Hexo-Blog-到-Github-上"><span class="nav-number">3.</span> <span class="nav-text">第三步：佈署 Hexo Blog 到 Github 上</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#首先登入您的github頁面"><span class="nav-number">3.1.</span> <span class="nav-text">首先登入您的github頁面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝hexo-deployer-git"><span class="nav-number">3.2.</span> <span class="nav-text">安裝hexo-deployer-git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改-config-yml-設定"><span class="nav-number">3.3.</span> <span class="nav-text">修改 _config.yml 設定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#佈署-Hexo-Blog"><span class="nav-number">3.4.</span> <span class="nav-text">佈署 Hexo Blog:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考資料-Reference"><span class="nav-number">4.</span> <span class="nav-text">參考資料 Reference</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看更多有關-Hexo-文章"><span class="nav-number">5.</span> <span class="nav-text">查看更多有關 Hexo 文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一步：安裝-Hexo"><span class="nav-number">1.</span> <span class="nav-text">第一步：安裝 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝需求"><span class="nav-number">1.1.</span> <span class="nav-text">安裝需求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-NPM-安裝-Hexo"><span class="nav-number">1.2.</span> <span class="nav-text">使用 NPM 安裝 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二步：建置-Hexo-Blog"><span class="nav-number">2.</span> <span class="nav-text">第二步：建置 Hexo Blog</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三步：Hexo-Blog-本地端測試"><span class="nav-number">3.</span> <span class="nav-text">第三步：Hexo Blog 本地端測試</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考資料-Reference"><span class="nav-number">4.</span> <span class="nav-text">參考資料 Reference</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看更多有關-Hexo-文章"><span class="nav-number">5.</span> <span class="nav-text">查看更多有關 Hexo 文章</span></a></li></ol></div>
             
 
           </div>
