@@ -94,14 +94,14 @@
 <meta property="og:url" content="http://qxesqxes.github.io/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/index.html">
 <meta property="og:site_name" content="Eric-YM Liou Blog">
 <meta property="og:description" content="當您在發布文章時，若想要使用本地資源資源，例如放置在本地端的圖片，而不想要麻煩地上傳到雲端，如 Imgur ，就來看看如何建立 Hexo 資產資料夾並使用本地資源的介紹吧! 一樣分成三個步驟讓您快速上手:  設定配置文件來建立資產資料夾 利用標籤插件來使用本地資源 檢視與驗證">
+<meta property="og:image" content="http://qxesqxes.github.io/2017/04/10/建立-Hexo-資產資料夾使用本地資源/Miku.jpg">
 <meta property="og:image" content="http://qxesqxes.github.io/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/Miku.jpg">
-<meta property="og:image" content="http://qxesqxes.github.io/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/Miku.jpg">
-<meta property="og:image" content="http://qxesqxes.github.io/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/markdown_failLoadImg.PNG">
+<meta property="og:image" content="http://qxesqxes.github.io/2017/04/10/建立-Hexo-資產資料夾使用本地資源/markdown_failLoadImg.PNG">
 <meta property="og:updated_time" content="2017-04-10T13:59:46.604Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="建立 Hexo 資產資料夾來使用本地資源">
 <meta name="twitter:description" content="當您在發布文章時，若想要使用本地資源資源，例如放置在本地端的圖片，而不想要麻煩地上傳到雲端，如 Imgur ，就來看看如何建立 Hexo 資產資料夾並使用本地資源的介紹吧! 一樣分成三個步驟讓您快速上手:  設定配置文件來建立資產資料夾 利用標籤插件來使用本地資源 檢視與驗證">
-<meta name="twitter:image" content="http://qxesqxes.github.io/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/Miku.jpg">
+<meta name="twitter:image" content="http://qxesqxes.github.io/2017/04/10/建立-Hexo-資產資料夾使用本地資源/Miku.jpg">
 
 
 
@@ -377,7 +377,7 @@
 <p>那當我們在文章中輸入：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% asset_img  Miku.jpg [初音未來] %&#125;</div></pre></td></tr></table></figure>
 <p>就會顯示：</p>
-<img src="/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/Miku.jpg" alt="[初音未來]" title="[初音未來]">
+<img src="/2017/04/10/建立-Hexo-資產資料夾使用本地資源/Miku.jpg" alt="[初音未來]" title="[初音未來]">
 <h2 id="其他討論"><a href="#其他討論" class="headerlink" title="其他討論"></a>其他討論</h2><ol>
 <li><p>若您的 Hexo 項目中只有少量的圖片，其實最簡單的方式就是將它們放在 <code>source/images</code> 資料夾中，然後通過類似於 <code>![](/images/img.jpg)</code> 的方法來訪問它們。<br>但缺點就是沒有組織化與不好管理。</p>
 </li>
@@ -385,7 +385,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![初音未來](Miku.jpg) # 使用![初音未來](/Miku.jpg) 小編的網頁反而會抓不到圖片</div></pre></td></tr></table></figure>
 <p><img src="Miku.jpg" alt="初音未來"></p>
 <p>但首頁卻會顯示</p>
-<img src="/Blog/2017/04/10/建立-Hexo-資產資料夾使用本地資源/markdown_failLoadImg.PNG" alt="[首頁會抓不到初音未來的圖片]" title="[首頁會抓不到初音未來的圖片]">    
+<img src="/2017/04/10/建立-Hexo-資產資料夾使用本地資源/markdown_failLoadImg.PNG" alt="[首頁會抓不到初音未來的圖片]" title="[首頁會抓不到初音未來的圖片]">    
 </li>
 <li><p>有 <a href="https://github.com/CodeFalling/codefalling.com/blob/master/source/_posts/no-pains-with-hexo-local-image.org" target="_blank" rel="external">其他網頁</a> 介紹使用 <code>hexo-asset-image</code> 的方式，假設您有點強迫症不能接受標籤插件的方式，想要使用 Markdown 常規的引用圖片語法，才需一試，不然現在版本的標籤插件已會正確地生成 html (官方的API才能確保後續的維護)。</p>
 </li>
